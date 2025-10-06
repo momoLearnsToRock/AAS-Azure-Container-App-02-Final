@@ -1,0 +1,6 @@
+@AAS_Azure_Container_App_02_Final_HostAddress = http://localhost:5143
+
+GET {{AAS_Azure_Container_App_02_Final_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
