@@ -30,5 +30,5 @@ steps:
     inputs:
       azureSubscription: 'Visual Studio Professional with MSDN(f550eeac-1a97-47aa-9a8c-d764ecde8d8d)'
       imageToDeploy: 'acraz2003mh251006.azurecr.io/aspnetcorecontainer:latest'
-      containerAppName: 'aca-az2003'
+      containerAppName: 'aca-az2003-2'
       resourceGroup: 'rg-dev-applied-skills-aca-02-final-test'
