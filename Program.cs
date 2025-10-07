@@ -6,11 +6,11 @@ builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+// // Configure the HTTP request pipeline.
+// if (!app.Environment.IsDevelopment())
+// {
     app.MapOpenApi();
-}
+// }
 
 var summaries = new[]
 {
@@ -31,7 +31,7 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
-app.Run();
+await app.RunAsync();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
